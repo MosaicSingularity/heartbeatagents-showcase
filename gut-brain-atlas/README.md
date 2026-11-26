@@ -2,15 +2,13 @@
 
 An interactive anatomical body map of the gut–brain axis — three signaling pathways animated at their real *relative* speeds, on a body you can tap, over a month of sample data you can scrub.
 
-![The Atlas](./hero.png)
-
 ## What's inside
 
 **Three pathways, three speeds.** The map is not a diagram with moving dots — the timings are the point. Each route runs on its own clock so the difference between them reads instantly:
 
 | Pathway | Mechanism shown | Timescale on the map |
 |---|---|---|
-| **Vagal** | EC-cell serotonin via TPH1, plus neuropod/neuroendocrine signaling | milliseconds → minutes (the instant wire) |
+| **Vagal** | EC-cell serotonin via TPH1, plus neuropod / neuroendocrine signaling | milliseconds → minutes (the instant wire) |
 | **Circulatory** | SCFAs crossing the blood–brain barrier via MCT transporters | minutes → hours (the slow tide) |
 | **Immune / inflammatory** | Cytokine signaling, barrier and inflammatory tone | hours → days (the long echo) |
 
@@ -31,8 +29,8 @@ An interactive anatomical body map of the gut–brain axis — three signaling p
 No build step, no dependencies, no server.
 
 ```bash
-open index.html          # macOS
-# or: python3 -m http.server 8080  →  http://localhost:8080
+open index.html                       # macOS
+# or:  python3 -m http.server 8080    → http://localhost:8080
 ```
 
 ## Files
@@ -42,8 +40,6 @@ index.html      markup: the body map SVG, panels, chapter canvas
 styles.css      the whole visual system
 data.js         the 30-day sample dataset + per-region mechanism content
 app.js          particle engine, chart, zoom/pan, chapter animations
-hero.png        map preview render
-screenshots/    captures of the timeline, a chapter, and the evidence panel
 ```
 
 ## Scientific grounding — and its limits
@@ -51,10 +47,3 @@ screenshots/    captures of the timeline, a chapter, and the evidence panel
 Every claim in the app is written as **correlation language** ("associated with", "co-occurring", "tracked alongside"), never as causation, and the copy is deliberately elegant rather than clinical. There is no dosage, no protocol, and no treatment advice anywhere in it — this is an explanatory visualization, not a medical device, and it says so.
 
 The twelve references surfaced in the app's **Evidence** panel are the intended sources. **Note honestly: the reference list has not yet been audited line-by-line for tier and for claim-by-claim accuracy.** Before this is used in a published or client-facing context, that pass should happen — confirming each source is Tier 1 peer-reviewed work and that every statement stays inside what the cited study actually supports. Treat the citation set as a draft until then.
-
-## Screenshots
-
-| | |
-|---|---|
-| ![Timeline at day 17](./screenshots/timeline-day17.png) | ![The Instant Wire](./screenshots/chapter-instant-wire.png) |
-| 30-day scrub, day 17 — low fiber, high load | Deep dive: The Instant Wire |
